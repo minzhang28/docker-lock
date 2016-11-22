@@ -8,7 +8,7 @@ app = Flask(__name__)
 def active_plugin():
     return jsonify({'tasks': tasks})
 
-@app.route('/AuthzPlugin.AuthZReq', methods=['POST'])
+@app.route('/AuthZPlugin.AuthZReq', methods=['POST'])
 def auth_req():
     return jsonify(
             {
@@ -18,7 +18,7 @@ def auth_req():
             }
         )
 
-@app.route('/AuthzPlugin.AuthZRes', methods=['GET'])
+@app.route('/AuthZPlugin.AuthZRes', methods=['GET'])
 def auth_res():
     return jsonify(
         {
